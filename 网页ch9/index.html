@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: cornflowerblue;">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">GAQ的个人网页</a>
+       
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="margin-left: 4rem;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: darksalmon;">饮食爱好</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: darksalmon;">美食介绍</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color: darksalmon;">联系方式</a>
+              </li> 
+          </ul>
+        </div> 
+      </nav>
+
+
+    
+    <header class="header">
+        <!-- 轮播 -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- 指示符 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/1.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="images/3.jpg" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- 左右切换按钮 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    </header>
+
+    <main class="container">
+       <div class="row">
+           <aside class="asidebar col-sm-3 mt-3">
+            <div class="card">
+                <img class="card-img-top p-4" src="images/tx.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h4 class="card-title">GAQ</h4>
+                  <p class="card-text">自我介绍<br>
+                                         早也潇潇，晚也潇潇，是谁多事种芭蕉？<br>
+                                         种了芭蕉，又怨芭蕉，是君心绪太无聊。</p>
+                  <a href="#" class="btn btn-primary">戳一戳</a>
+                </div>
+            </div>
+           </aside>
+
+           <section class="col-sm-9 mt-3">
+            <div class="card mb-3">
+                <div class="card-header">饮食爱好</div>
+                <div class="card-body m-5">
+                    
+                    <div class="list-group list-group-checkable">
+                        
+                        <label class="list-group-item py-3" for="listGroupCheckableRadios1">
+                          甜品
+                          <span class="d-block small opacity-50">水果千层、双皮奶、奶油芭菲、蜂蜜蛋糕......</span>
+                        </label>
+                      
+                        
+                        <label class="list-group-item py-3" for="listGroupCheckableRadios2">
+                          面点
+                          <span class="d-block small opacity-50">肉夹馍、番茄肉酱意面、玫瑰豆沙包、筋饼......</span>
+                        </label>
+                      
+                        
+                        <label class="list-group-item py-3" for="listGroupCheckableRadios3">
+                          菜肴
+                          <span class="d-block small opacity-50">毛氏红烧肉、鱼香肉丝、脱骨猪蹄、番茄炒蛋、茄盒......</span>
+                        </label>
+                    </div>
+                   
+               
+                </div>
+        
+            </div>
+
+            <div class="card mb-3">
+                <h3 class="card-title p-4">美食介绍</h3>
+                <div class="row my-5" style="margin-left: 1rem;">
+                <div class="col-sm-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal1">
+                        <img src="images/4.jpg" class="" width="80%"> 
+                    </a>
+                    <div class="modal" id="myModal1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                    
+                                <!-- 模态框头部 -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">奶油培根意面</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                    
+                                <!-- 模态框内容 -->
+                                <div class="modal-body">
+                                    <img src="images/4.jpg" class="" width="80%">
+                                </div>
+                    
+                                <!-- 模态框底部 -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal2">
+                        <img src="images/5.jpg" class="" width="80%"> 
+                    </a>
+                    <div class="modal" id="myModal2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                    
+                                <!-- 模态框头部 -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">寿司</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                    
+                                <!-- 模态框内容 -->
+                                <div class="modal-body">
+                                    <img src="images/5.jpg" class="" width="80%">
+                                </div>
+                    
+                                <!-- 模态框底部 -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#myModal3">
+                        <img src="images/6.jpg" class="" width="80%"> 
+                    </a>
+                    <div class="modal" id="myModal3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                    
+                                <!-- 模态框头部 -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">毛氏红烧肉</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                    
+                                <!-- 模态框内容 -->
+                                <div class="modal-body">
+                                    <img src="images/6.jpg" class="" width="80%">
+                                </div>
+                    
+                                <!-- 模态框底部 -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                    
+                    
+                   
+                </div>
+        
+                
+            </div>
+
+           </section>
+        
+        </div>   
+
+
+    
+    </main>
+    <footer class="footer bg-dark text-light p-5 text-center">联系方式：199****5678</footer>
+
+
+
+    
+    
+    <script src="bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
